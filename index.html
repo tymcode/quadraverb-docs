@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alesis QuadraVerb Manual</title>
+  <style>
+    :root {
+      --ink: #1a1a1a;
+      --muted: #555;
+      --paper: #f7f4ef;
+      --accent: #0b5fff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 600px at 10% -10%, #fff8e8 0%, transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, #e8eef8 0%, transparent 50%),
+        var(--paper);
+      display: grid;
+      place-items: center;
+      padding: 2rem;
+    }
+    main {
+      max-width: 40rem;
+      width: 100%;
+    }
+    h1 {
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin: 0 0 0.75rem;
+      line-height: 1.15;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.55;
+      color: var(--muted);
+      margin: 0 0 1.5rem;
+    }
+    a.cta {
+      display: inline-block;
+      color: #fff;
+      background: var(--ink);
+      text-decoration: none;
+      padding: 0.7rem 1.15rem;
+      border-radius: 0.35rem;
+      font-family: ui-sans-serif, system-ui, sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      transition: transform 160ms ease, background 160ms ease;
+    }
+    a.cta:hover {
+      background: var(--accent);
+      transform: translateY(-1px);
+    }
+    a.cta:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Alesis QuadraVerb Manual</h1>
+    <p>
+      A cleaned-up HTML transcription of the original Alesis QuadraVerb
+      instruction manual — rescanned, OCR’d, converted, and manually edited
+      for readable on-screen and print use.
+    </p>
+    <a class="cta" href="AlesisQuadraVerbUsersManual.html">Open the manual</a>
+  </main>
+</body>
+</html>
