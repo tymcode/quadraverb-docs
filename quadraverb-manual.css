@@ -1,0 +1,606 @@
+/*
+  Alesis QuadraVerb users manual — editing stylesheet
+  ----------------------------------------------------
+  Open the HTML beside this file and clean up text in place.
+  Prefer these hooks over ad-hoc inline styles:
+
+  Structure
+    article.manual          whole document
+    header.title-block      cover / title
+    nav.toc                 table of contents
+    section.manual-section  one major section (h2)
+    hr.section-break        divider between major sections
+    hr.topic-break          lighter divider inside a section
+    div.topic               Parameters / Editing / Modulating block
+      .topic-parameters | .topic-editing | .topic-modulating
+      .topic-effect-{reverb|delay|pitch|eq|mix|mod|midi}
+      nested .topic (e.g. MOD PARAMETERS inside Modulating)
+
+  Callouts
+    aside.edition-note      editorial / transcription note
+    aside.note              general note
+    aside.please-note       “Please note:” blocks
+    ol.steps / ul.features  procedures and feature lists
+
+  Hardware UI
+    table.lcd               2×16 QuadraVerb display mockup
+    td.lcd-line             one display row
+    table.lcd-grid          gallery of LCDs (4 columns by default)
+    figure.figure           numbered manual figure
+    figure.config-diagram   configuration signal-flow art
+    figure.panel-photo      front / back panel photo
+    figure.lcd-photo        cropped LCD from the scan
+    figcaption              caption under a figure
+
+  Inline
+    strong.panel            front-panel button/label names
+    code.config             configuration path strings
+    span.ocr-suspect        mark dubious OCR for later fix
+    p.table-intro           prose introducing a following table/LCD
+*/
+
+:root {
+  --ink: #1a1a1a;
+  --muted: #5a5a5a;
+  --rule: #c8c8c8;
+  --paper: #f7f4ef;
+  --panel: #fff;
+  --lcd-bg: #ddb063;
+  --lcd-ink: #1c2410;
+  --lcd-border: #2a2a2a;
+  --accent: #2B267C;
+  --note-bg: #f0ebe3;
+  --max: 46rem;
+  --font-body: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  --font-ui: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-lcd: "IBM Plex Mono", "SF Mono", Menlo, Consolas, monospace;
+  --topic-indent: 1.25rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--ink);
+  background: #ddd8d0;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+}
+
+.manual {
+  max-width: calc(var(--max) + 4rem);
+  margin: 0 auto;
+  padding: 2.5rem 2rem 4rem;
+  background: #ffffff;
+  min-height: 100vh;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.06), 0 12px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* ----- Title ----- */
+
+.title-block {
+  margin-bottom: 1.5rem;
+}
+
+.title-block h1 {
+  margin: 0 0 0.4rem;
+  font-family: var(--font-ui);
+  font-size: 1.85rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.title-block .brand-line {
+  margin: 0;
+  font-family: var(--font-ui);
+  font-size: 1.05rem;
+  color: var(--muted);
+}
+
+.title-block .byline {
+  margin: 0.35rem 0 0;
+  font-style: italic;
+  color: var(--muted);
+}
+
+/* ----- Notes / asides ----- */
+
+.edition-note,
+.note,
+.please-note {
+  margin: 1.25rem 0;
+  padding: 0.85rem 1rem;
+  background: #a7cdff;
+  border-left: 3px solid #2B267C;
+  font-family: var(--font-ui);
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.edition-note p,
+.note p,
+.please-note p {
+  margin: 0.4rem 0;
+}
+
+.edition-note p:first-child,
+.note p:first-child,
+.please-note p:first-child {
+  margin-top: 0;
+}
+
+.edition-note p:last-child,
+.note p:last-child,
+.please-note p:last-child {
+  margin-bottom: 0;
+}
+
+.please-note::before {
+  content: "Please note";
+  display: block;
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #2B267C;
+  margin-bottom: 0.35rem;
+}
+
+/* ----- TOC ----- */
+
+.toc {
+  margin: 1.5rem 0 2rem;
+  padding: 1rem 1.25rem;
+  background: var(--panel);
+  border: 1px solid #2B267C;
+}
+
+.toc h2 {
+  margin: 0 0 0.75rem;
+  font-family: var(--font-ui);
+  font-size: 1.1rem;
+}
+
+.toc ol {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.toc li {
+  margin: 0.2rem 0;
+  font-family: var(--font-ui);
+  font-size: 0.92rem;
+}
+
+.toc a {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.toc a:hover {
+  border-bottom-color: var(--accent);
+  color: var(--accent);
+}
+
+.toc ol ol {
+  margin-top: 0.15rem;
+  margin-bottom: 0.35rem;
+}
+
+/* ----- Sections / headings ----- */
+
+.manual-section {
+  margin: 0 0 2rem;
+}
+
+.manual h2 {
+  margin: 2rem 0 0.85rem;
+  padding-bottom: 0.35rem;
+  font-family: var(--font-ui);
+  font-size: 1.45rem;
+  border-bottom: 2px solid #2B267C;
+}
+
+.manual h3 {
+  margin: 1.6rem 0 0.55rem;
+  font-family: var(--font-ui);
+  font-size: 1.15rem;
+  color: #222;
+}
+
+.manual h4 {
+  margin: 1.25rem 0 0.4rem;
+  font-family: var(--font-ui);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.manual p {
+  margin: 0.75rem 0;
+}
+
+.manual a {
+  color: var(--accent);
+}
+
+hr.section-break {
+  border: 0;
+  border-top: 2px solid var(--ink);
+  margin: 2.5rem 0;
+}
+
+hr.topic-break {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  margin: 1.5rem 0;
+}
+
+/* ----- Lists ----- */
+
+ul.features,
+ol.steps,
+.manual ul,
+.manual ol {
+  margin: 0.75rem 0;
+  padding-left: 1.35rem;
+}
+
+ul.features li,
+ol.steps li,
+.manual li {
+  margin: 0.3rem 0;
+}
+
+ol.steps {
+  font-variant-numeric: tabular-nums;
+}
+
+
+/* ----- LCD mockup ----- */
+
+table.lcd {
+  width: 250px;
+  max-width: 100%;
+  margin: 1rem 0 1.15rem;
+  border-collapse: collapse;
+  border: 2px solid var(--lcd-border);
+  background: var(--lcd-bg);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+  font-family: var(--font-lcd);
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  line-height: 1.25;
+}
+
+table.lcd td.lcd-line {
+  padding: 0.5rem 0.5rem .075rem .075rem;
+  color: var(--lcd-ink);
+  white-space: pre;
+  border: 0;
+  line-height: 1;
+}
+
+table.lcd tr + tr td.lcd-line {
+  padding-top: 0.1rem;
+  padding-bottom: 0.4rem;
+}
+
+.cursor {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+
+.param-value {
+  font-family: var(--font-ui);
+  font-weight: 700;
+}
+
+.param-name {
+  font-family: var(--font-ui);
+  font-weight: 450;
+}
+
+.effect-unit {
+  font-family: var(--font-ui);
+  font-size: 1.15rem;
+  border-bottom: 2px solid #2B267C;
+  padding-bottom: 0.35rem;
+  margin-bottom: 0.35rem;
+}
+
+/* Grid of LCD mockups (e.g. Mod Target lists) */
+table.lcd-grid {
+  width: 100%;
+  margin: 1rem 0 1.25rem;
+  border-collapse: separate;
+  border-spacing: 0.55rem 0.65rem;
+  table-layout: fixed;
+}
+
+table.lcd-grid > tbody > tr > td,
+table.lcd-grid > tr > td {
+  vertical-align: top;
+  width: 25%;
+  padding: 0;
+  border: 0;
+}
+
+table.lcd-grid .lcd {
+  width: 100%;
+  margin: 0;
+  font-size: 0.72rem;
+}
+
+table.lcd-grid .lcd td.lcd-line {
+  padding: 0.28rem 0.4rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+table.lcd-grid td.lcd-grid-empty {
+  border: 0;
+}
+
+/* ----- Figures ----- */
+
+figure.figure,
+figure.config-diagram,
+figure.panel-photo,
+figure.lcd-photo {
+  margin: 1.25rem 0;
+  padding: 0.75rem;
+  background: var(--panel);
+  border: 1px solid var(--rule);
+}
+
+figure.figure img,
+figure.config-diagram img,
+figure.panel-photo img,
+figure.lcd-photo img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+figure.panel-photo img {
+  max-height: 22rem;
+  width: auto;
+}
+
+figure.lcd-photo {
+  width: max-content;
+  max-width: 100%;
+}
+
+figure.lcd-photo img {
+  image-rendering: auto;
+}
+
+figcaption {
+  margin-top: 0.55rem;
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+dt{
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+/* ----- Inline hints ----- */
+
+strong.panel {
+  font-family: var(--font-ui);
+  font-weight: 700;
+}
+
+code,
+code.config {
+  font-family: var(--font-lcd);
+  font-size: 0.88em;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 0.05em 0.3em;
+  border-radius: 3px;
+}
+
+/* ----- Appendix / dense charts ----- */
+
+.appendix-chart,
+.page-chart,
+.spec-list {
+  font-family: var(--font-ui);
+  font-size: 0.9rem;
+}
+
+table.data {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-family: var(--font-ui);
+  font-size: 0.88rem;
+}
+
+table.data th,
+table.data td {
+  border: 1px solid var(--rule);
+  padding: 0.35rem 0.5rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+table.data th {
+  background: #ece7df;
+}
+
+table.data caption,
+table.page-chart caption {
+  caption-side: top;
+  text-align: left;
+  font-family: var(--font-ui);
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+  color: var(--ink);
+}
+
+table.page-chart {
+  margin-bottom: 1.75rem;
+}
+
+table.page-chart td:nth-child(2) {
+  white-space: normal;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Multicolumn parameter lists (e.g. Mod Target charts) */
+table.target-list {
+  width: 100%;
+  table-layout: fixed;
+  margin: 0.75rem 0 1.15rem;
+}
+
+table.target-list td {
+  border: 0;
+  padding: 0.15rem 0.65rem 0.15rem 0;
+  vertical-align: top;
+  font-family: var(--font-ui);
+  font-size: 0.92rem;
+}
+
+/* Character set chart (Naming a Program) */
+table.char-chart {
+  width: max-content;
+  max-width: 100%;
+  margin: 0.85rem 0 1.25rem;
+  border-collapse: collapse;
+  font-family: var(--font-lcd);
+  font-size: 0.95rem;
+  line-height: 1.2;
+  background: var(--panel);
+}
+
+table.char-chart td {
+  width: 1.85rem;
+  height: 1.65rem;
+  padding: 0.15rem;
+  border: 1px solid var(--ink);
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* ----- Topic blocks (Parameters / Editing / Modulating) -----
+   Indent by kind; nested topics (e.g. MOD PARAMETERS inside
+   Modulating) pick up an extra step. Tweak --topic-indent as needed.
+*/
+
+div.topic {
+  margin: 0.75rem 0 1rem;
+  padding-left: var(--topic-indent);
+  border-left: 2px solid transparent;
+}
+
+div.topic.topic-parameters {
+  border-left-color: color-mix(in srgb, var(--accent) 35%, transparent);
+}
+
+div.topic.topic-editing {
+  border-left-color: color-mix(in srgb, var(--ink) 22%, transparent);
+}
+
+div.topic.topic-modulating {
+  border-left-color: color-mix(in srgb, var(--lcd-bg) 70%, var(--accent));
+}
+
+/* Nested topic inside another topic → clearer hierarchy */
+div.topic .topic {
+  padding-left: var(--topic-indent);
+  margin-left: 0.25rem;
+}
+
+/* Optional effect hooks (no default visual; style as needed)
+   .topic-effect-reverb | .topic-effect-delay | .topic-effect-pitch
+   .topic-effect-eq | .topic-effect-mix | .topic-effect-mod | .topic-effect-midi
+*/
+
+/* ----- Print ----- */
+
+@media print {
+  html {
+    background: #fff;
+    font-size: 11pt;
+  }
+
+  body {
+    background: #fff;
+  }
+
+  .manual {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    background: #fff;
+  }
+
+  .toc a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  table.lcd {
+    break-inside: avoid;
+    color: var(--lcd-ink)
+  }
+
+  figure {
+    break-inside: avoid;
+  }
+
+  .table-intro {
+    break-after: avoid;
+  }
+
+  .data {
+    break-inside: avoid;
+  }
+
+  section.manual-section {
+    break-before: page;
+  }
+
+  .effect-unit {
+    break-before: page;
+  }
+
+  #reverb-1 {
+    break-before: auto; /* cancel the page break */
+  }
+
+  /* Keep heading with the content that follows */
+  h2, h3, h4 {
+    break-after: avoid;
+    break-inside: avoid;
+  }
+
+
+
+  /* Don’t orphan a heading at the bottom of a page */
+  h2, h3, h4 {
+    orphans: 3;
+    widows: 3;
+  }
+}
