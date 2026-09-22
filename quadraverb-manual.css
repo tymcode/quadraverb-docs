@@ -367,7 +367,9 @@ figure.lcd-photo {
 figure.figure img,
 figure.config-diagram img,
 figure.panel-photo img,
-figure.lcd-photo img {
+figure.lcd-photo img,
+figure.figure svg,
+figure.config-diagram svg {
   display: block;
   max-width: 100%;
   height: auto;

@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alesis QuadraVerb Plus Users Manual Addendum</title>
+  <link rel="stylesheet" href="quadraverb-manual.css">
+</head>
+<body>
+<!--
+  QuadraVerb Plus addendum — HTML edition
+  Content from the Alesis QuadraVerb Plus Users Manual Addendum,
+  set with the same structure as AlesisQuadraVerbUsersManual.html.
+-->
+
+<article class="manual">
+  <header class="title-block">
+    <h1>Alesis QuadraVerb Plus Users Manual Addendum</h1>
+    <p class="brand-line"><strong>Alesis</strong> · <em>QuadraVerb Plus</em></p>
+    <p class="byline">Users manual addendum</p>
+  </header>
+
+  <nav class="toc" aria-label="Table of Contents">
+    <h2>Table of Contents</h2>
+    <ol>
+      <li><a href="#introduction">Introduction</a>
+        <ol>
+          <li><a href="#new-features">New Features</a></li>
+        </ol>
+      </li>
+      <li><a href="#multi-tap-delay">Multi Tap Delay</a>
+        <ol>
+          <li><a href="#selecting-multi-tap">Selecting the Multi Tap Delay Configuration</a></li>
+          <li><a href="#editing-multi-tap">Editing the Multi Tap Delay Parameters</a></li>
+          <li><a href="#modulating-multi-tap">Modulating the Multi Tap Delay Parameters</a></li>
+          <li><a href="#editing-eq-pitch-delay-multitap">Editing the EQ, Pitch, and Delay Parameters</a></li>
+        </ol>
+      </li>
+      <li><a href="#sampling">Sampling</a>
+        <ol>
+          <li><a href="#selecting-sampling">Selecting the Sampling Configuration</a></li>
+          <li><a href="#recording-a-sample">Recording a Sample</a></li>
+          <li><a href="#playing-back-a-sample">Playing Back a Sample</a></li>
+          <li><a href="#sample-playback-length">Adjusting the Sample Playback Length</a></li>
+          <li><a href="#sample-mix">Adjusting the Sample Mix Parameters</a></li>
+        </ol>
+      </li>
+      <li><a href="#panning-tremolo">Panning and Tremolo Modulation</a>
+        <ol>
+          <li><a href="#selecting-panning-tremolo">Selecting the Panning or Tremolo Configuration</a></li>
+          <li><a href="#editing-panning-tremolo">Editing the Panning or Tremolo Parameters</a></li>
+          <li><a href="#modulating-panning-tremolo">Modulating the Panning or Tremolo Parameters</a></li>
+          <li><a href="#editing-eq-pitch-delay-reverb-pan">Editing the EQ, Pitch, Delay, and Reverb Parameters</a></li>
+        </ol>
+      </li>
+      <li><a href="#ring-modulator">Ring Modulator</a>
+        <ol>
+          <li><a href="#selecting-ring-modulator">Selecting the Ring Modulator</a></li>
+          <li><a href="#editing-ring-modulator">Editing the Ring Modulator Parameters</a></li>
+          <li><a href="#modulating-ring-modulator">Modulating the Ring Modulator Parameters</a></li>
+          <li><a href="#editing-delay-reverb-ring">Editing the Delay and Reverb Parameters</a></li>
+        </ol>
+      </li>
+      <li><a href="#resonators">Resonators</a>
+        <ol>
+          <li><a href="#selecting-resonator">Selecting the Resonator Configuration</a></li>
+          <li><a href="#editing-resonator">Editing the Resonator Parameters</a></li>
+          <li><a href="#modulating-resonator">Modulating the Resonator Parameters</a></li>
+          <li><a href="#editing-delay-reverb-resonator">Editing the Delay and Reverb Parameters</a></li>
+        </ol>
+      </li>
+    </ol>
+  </nav>
+
+  <hr class="section-break">
+
+  <section id="introduction" class="manual-section">
+    <h2>Introduction</h2>
+    <p>The <em>QuadraVerb Plus</em> is an upgraded version of the original QuadraVerb. The many new features that are now available are made possible by a simple software update, which requires only the replacement of its EPROM (Erasable Programmable Read Only Memory). The hardware of the QuadraVerb remains unchanged.</p>
+    <p>The operation of the QuadraVerb Plus is identical to the original QuadraVerb, and all original features of the QuadraVerb are retained in the QuadraVerb Plus. All patches originally written for the QuadraVerb will sound the same on the QuadraVerb Plus. This addendum only describes the new features. Full instructions on the operation of the unit are in the <a href="AlesisQuadraVerbUsersManual.html">QuadraVerb Users Manual</a>.</p>
+
+    <h3 id="new-features">New Features</h3>
+    <p>New features available on the QuadraVerb Plus include Sampling, Ring Modulator, and Resonator configurations, plus the addition of Multi Tap Delay, Auto Panning, and Tremolo Modulation on original configurations where these features are applicable.</p>
+    <p>In addition, the QuadraVerb’s extensive MIDI implementation has been greatly enhanced to include real-time parameter control of parameters such as the Delay, Volume, and Feedback for each of the 8 individual taps in the Multi Tap Delay configuration, as well as the Auto Panning and Tremolo Modulation Speed and Depth. Also, the QuadraVerb Plus lets the user adjust parameters such as the Ring Modulator’s Spectrum Shift, Output Up/Down Mix, and Delay/Reverb Up/Down Mix, as well as the Pitch and Decay of the Resonator. This allows a greater level of creative control than before.</p>
+    <ul class="features">
+      <li><strong>Multi Tap Delay.</strong> A new type of delay available in the <code class="config">5 BAND EQ&rarr;PITCH&rarr;DELAY</code> configuration, where up to 8 taps can be defined. Delay Time, Volume, Panning, and Feedback Amount can be adjusted individually for each tap.</li>
+      <li><strong>Sampling.</strong> The QuadraVerb Plus can make a brief digital recording of the input being fed to it.</li>
+      <li><strong>Auto Panning.</strong> A signal automatically pans from side to side (when the outputs are connected in stereo) at a selected rate and depth.</li>
+      <li><strong>Tremolo Modulation.</strong> An effect which automatically varies the volume at a selected rate and depth, simulating the “surf sound” tremolo found on old instrument amplifiers.</li>
+      <li><strong>Ring Modulator.</strong> A specialized amplitude modulator that produces an output containing only the sum and difference frequencies of its input waveforms’ harmonics. Most useful for generating metallic, bell-like sounds.</li>
+      <li><strong>Resonators.</strong> A resonator generates a pitch in addition to the original input signal, so a non-pitched sound can become pitched. There are 5 resonators in the QuadraVerb Plus.</li>
+    </ul>
+  </section>
+
+  <hr class="section-break">
+
+  <section id="multi-tap-delay" class="manual-section">
+    <h2>Multi Tap Delay</h2>
+    <p>The Multi Tap Delay is a new type of delay available in the <code class="config">5 BAND EQ&rarr;PITCH&rarr;DELAY</code> configuration. In this mode, up to 8 taps can be defined in the delay. The Delay Time, Volume, Panning, and Feedback Amount can be individually adjusted for each tap. The cumulative delay time of all 8 taps is 1500 milliseconds.</p>
+    <p>The <span class="param-name">Master Feedback</span> control adjusts the global amount of feedback from all the taps, and the Mix Delay volume adjusts the amount of delay in the effect output. The Delay Time is relative to the previous tap, which means that when Tap #1 is delayed, all of the following taps are delayed by the same amount as well. The following illustration shows how the timing of adjacent taps behaves when a single delay time is modified (Tap 2 delay is changed from 250&nbsp;ms to 500&nbsp;ms in this example).</p>
+
+    <figure class="figure">
+      <svg viewBox="0 0 760 300" role="img" aria-labelledby="fig7-title fig7-desc">
+        <title id="fig7-title">Multi Tap Delays</title>
+        <desc id="fig7-desc">Two timelines. In A, taps fall at 250, 500, 1000, and 1125 milliseconds. In B, lengthening tap 2 by 250 milliseconds moves tap 2 to 750 milliseconds and pushes taps 3 and 4 later by the same amount.</desc>
+        <style>
+          .axis { stroke: #1a1a1a; stroke-width: 1.5; fill: none; }
+          .tick { stroke: #1a1a1a; stroke-width: 1; }
+          .interval { stroke: #2B267C; stroke-width: 1.25; }
+          .tap { stroke: #1a1a1a; stroke-width: 1.5; }
+          .label, .time, .row { font-family: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; fill: #1a1a1a; }
+          .label { font-size: 13px; font-weight: 650; }
+          .time { font-size: 12px; fill: #2B267C; }
+          .row { font-size: 16px; font-weight: 700; }
+          .scale { font-size: 12px; fill: #5a5a5a; }
+          .guide { stroke: #5a5a5a; stroke-width: 1.15; fill: none; stroke-dasharray: 5 4; opacity: 0.85; }
+        </style>
+        <text class="row" x="8" y="28">A</text>
+        <!-- row A: 250, 500, 1000, 1125 -->
+        <line class="axis" x1="48" y1="78" x2="712" y2="78"/>
+        <g>
+          <line class="interval" x1="48" y1="48" x2="154" y2="48"/>
+          <line class="interval" x1="154" y1="48" x2="261" y2="48"/>
+          <line class="interval" x1="261" y1="48" x2="474" y2="48"/>
+          <line class="interval" x1="474" y1="48" x2="527" y2="48"/>
+          <text class="time" x="101" y="42" text-anchor="middle">250 ms</text>
+          <text class="time" x="207" y="42" text-anchor="middle">250 ms</text>
+          <text class="time" x="367" y="42" text-anchor="middle">500 ms</text>
+          <text class="time" x="500" y="42" text-anchor="middle">125 ms</text>
+        </g>
+        <g>
+          <line class="tap" x1="154" y1="62" x2="154" y2="94"/>
+          <polygon points="154,94 149,84 159,84"/>
+          <text class="label" x="154" y="112" text-anchor="middle">TAP 1</text>
+          <line class="tap" x1="261" y1="62" x2="261" y2="94"/>
+          <polygon points="261,94 256,84 266,84"/>
+          <text class="label" x="261" y="112" text-anchor="middle">TAP 2</text>
+          <line class="tap" x1="474" y1="62" x2="474" y2="94"/>
+          <polygon points="474,94 469,84 479,84"/>
+          <text class="label" x="474" y="112" text-anchor="middle">TAP 3</text>
+          <line class="tap" x1="527" y1="62" x2="527" y2="94"/>
+          <polygon points="527,94 522,84 532,84"/>
+          <text class="label" x="527" y="112" text-anchor="middle">TAP 4</text>
+        </g>
+
+        <text class="row" x="8" y="168">B</text>
+        <!-- row B: 250, 750, 1250, 1375 -->
+        <line class="axis" x1="48" y1="210" x2="712" y2="210"/>
+        <g>
+          <line class="interval" x1="48" y1="180" x2="154" y2="180"/>
+          <line class="interval" x1="154" y1="180" x2="367" y2="180"/>
+          <line class="interval" x1="367" y1="180" x2="580" y2="180"/>
+          <line class="interval" x1="580" y1="180" x2="633" y2="180"/>
+          <text class="time" x="101" y="174" text-anchor="middle">250 ms</text>
+          <text class="time" x="260" y="174" text-anchor="middle">500 ms</text>
+          <text class="time" x="473" y="174" text-anchor="middle">500 ms</text>
+          <text class="time" x="606" y="174" text-anchor="middle">125 ms</text>
+        </g>
+        <g>
+          <line class="tap" x1="154" y1="194" x2="154" y2="226"/>
+          <polygon points="154,226 149,216 159,216"/>
+          <text class="label" x="154" y="244" text-anchor="middle">TAP 1</text>
+          <line class="tap" x1="367" y1="194" x2="367" y2="226"/>
+          <polygon points="367,226 362,216 372,216"/>
+          <text class="label" x="367" y="244" text-anchor="middle">TAP 2</text>
+          <line class="tap" x1="580" y1="194" x2="580" y2="226"/>
+          <polygon points="580,226 575,216 585,216"/>
+          <text class="label" x="580" y="244" text-anchor="middle">TAP 3</text>
+          <line class="tap" x1="633" y1="194" x2="633" y2="226"/>
+          <polygon points="633,226 628,216 638,216"/>
+          <text class="label" x="633" y="244" text-anchor="middle">TAP 4</text>
+        </g>
+        <g aria-hidden="true">
+          <!-- Upper arrow tip → lower arrow tail (same tap number) -->
+          <line class="guide" x1="154" y1="94" x2="154" y2="194"/>
+          <line class="guide" x1="261" y1="94" x2="367" y2="194"/>
+          <line class="guide" x1="474" y1="94" x2="580" y2="194"/>
+          <line class="guide" x1="527" y1="94" x2="633" y2="194"/>
+        </g>
+        <g class="scale">
+          <line class="tick" x1="48" y1="268" x2="48" y2="278"/>
+          <line class="tick" x1="269" y1="268" x2="269" y2="278"/>
+          <line class="tick" x1="490" y1="268" x2="490" y2="278"/>
+          <line class="tick" x1="712" y1="268" x2="712" y2="278"/>
+          <line class="axis" x1="48" y1="273" x2="712" y2="273"/>
+          <text x="48" y="294" text-anchor="middle">0</text>
+          <text x="269" y="294" text-anchor="middle">0.5 Sec</text>
+          <text x="490" y="294" text-anchor="middle">1.0 Sec</text>
+          <text x="712" y="294" text-anchor="middle">1.5 Sec</text>
+        </g>
+      </svg>
+      <figcaption>Figure 7 — Multi Tap Delays. Lengthening one tap delays every tap after it.</figcaption>
+    </figure>
+
+    <p>In Figure 7A, Tap #1 is set at 250&nbsp;ms, Tap #2 is set 250&nbsp;ms behind Tap #1 (500&nbsp;ms from the beginning), and Tap #3 is set 500&nbsp;ms behind Tap #2 (1 second from the beginning). In Figure 7B, an additional 250&nbsp;ms is added to Tap #2, which means that it now occurs at 750&nbsp;ms (instead of 500&nbsp;ms as in 7A), and Tap #3 now occurs at 1250&nbsp;ms (instead of 1 second in Figure 7A).</p>
+
+    <h3 id="selecting-multi-tap">Selecting the Multi Tap Delay Configuration</h3>
+    <p>Multi Tap Delay is accessed through the <code class="config">5 BAND EQ&rarr;PITCH&rarr;DELAY</code> configuration.</p>
+    <p class="table-intro">To select the configuration, first press the <strong class="panel">CONFIG</strong> button, then press the <strong class="panel">VALUE</strong> buttons until the display reads:</p>
+    <table class="lcd" aria-label="QuadraVerb Plus display">
+      <tr><td class="lcd-line">CONFIGURATION:</td></tr>
+      <tr><td class="lcd-line"><span class="cursor">5</span>BAND EQ&gt;PCH&gt;DLY</td></tr>
+    </table>
+    <p>The block diagram of this configuration is as follows.</p>
+
+    <figure class="config-diagram">
+      <img src="figures/fig-08-bd-multi-tap-dly.svg" alt="5 Band EQ, Pitch, Delay block diagram with Multi Tap Delay">
+      <figcaption>Figure 8 — 5 Band EQ&rarr;Pitch&rarr;Delay block diagram with Multi Tap Delay</figcaption>
+    </figure>
+
+    <h3 id="editing-multi-tap">Editing the Multi Tap Delay Parameters</h3>
+    <div class="topic-editing topic-effect-delay">
+      <ol class="steps">
+        <li>
+          <p class="table-intro">To access the Multi Tap Delay parameters, press the <strong class="panel">DELAY</strong> button. The display will then read:</p>
+          <table class="lcd" aria-label="QuadraVerb Plus display">
+            <tr><td class="lcd-line">DELAY TYPE:</td></tr>
+            <tr><td class="lcd-line"><span class="cursor">&nbsp;</span>STEREO DELAY</td></tr>
+          </table>
+          <p class="table-intro">Press the “Up” <strong class="panel">VALUE</strong> button until the next selection reads:</p>
+          <table class="lcd" aria-label="QuadraVerb Plus display">
+            <tr><td class="lcd-line">DELAY TYPE:</td></tr>
+            <tr><td class="lcd-line"><span class="cursor">&nbsp;</span>MULTI TAP DELAY</td></tr>
+          </table>
+          <p>This page allows the selection of the Mono, Stereo, or Ping Pong delay (as on the original configuration) or the new Multi Tap Delay.</p>
+        </li>
+        <li>
+          <p class="table-intro">Pressing the “Up” <strong class="panel">PAGE</strong> button selects the next page, which reads:</p>
+          <table class="lcd" aria-label="QuadraVerb Plus display">
+            <tr><td class="lcd-line">DELAY INPUT 1:</td></tr>
+            <tr><td class="lcd-line"><span class="cursor">&nbsp;</span>POST-EQ</td></tr>
+          </table>
+          <p class="table-intro">Pressing the <strong class="panel">VALUE</strong> buttons selects the other input choice, which reads:</p>
+          <table class="lcd" aria-label="QuadraVerb Plus display">
+            <tr><td class="lcd-line">DELAY INPUT 1:</td></tr>
+            <tr><td class="lcd-line"><span class="cursor">&nbsp;</span>PRE-EQ</td></tr>
+          </table>
+          <p>This page selects whether the input signal to Input #1 of the Delay section is derived either before (Pre) or after (Post) the EQ. This page is also identical to the original QuadraVerb configuration.</p>
+        </li>
+        <li>
+          <p class="table-intro">Pressing the “Up” <strong class="panel">PAGE</strong> button again selects the next page, which reads:</p>
+          <table class="lcd" aria-label="QuadraVerb Plus display">
+            <tr><td class="lcd-line">DELAY INPUT MIX:</td></tr>
+            <tr><td class="lcd-line">1&lt;-<span class="cursor">0</span>0-&gt; PITCH</td></tr>
+          </table>
+          <p>Pressing the <strong class="panel">VALUE</strong> buttons selects the mix between Delay Input #1 (which was selected on the previous page) and the second Delay input, which is dedicated to the output of the Pitch section. This page is also identical to the original QuadraVerb configuration.</p>
+        </li>
+        <li>
+          <p class="table-intro">Pressing the “Up” <strong class="panel">PAGE</strong> button again selects the Delay Tap to be edited, which reads:</p>
+          <table class="lcd" aria-label="QuadraVerb Plus display">
+            <tr><td class="lcd-line">TAP NUMBER:</td></tr>
+            <tr><td class="lcd-line" style="text-align: center;"><span class="cursor">1</span></td></tr>
+          </table>
+          <p>Pressing the <strong class="panel">VALUE</strong> buttons selects the desired tap. The range is 1 to 8.</p>
+        </li>
+        <li>
+          <p class="table-intro">Pressing the “Up” <strong class="panel">PAGE</strong> button again selects the Tap Delay Time page, which reads:</p>
+          <table class="lcd" aria-label="QuadraVerb Plus display">
+            <tr><td class="lcd-line">TAP 1 DELAY TIME:</td></tr>
+            <tr><td class="lcd-line"><span class="cursor">0</span>125 millisecs</td></tr>
+          </table>
+          <p>Pressing the <strong class="panel">VALUE</strong> buttons selects the desired Delay Time, measured in milliseconds. The tap number selected on the previous page is displayed on the first line. If the cumulative delay time of the 8 taps exceeds 1500 milliseconds (1.5 seconds), the delay time will not be allowed to increase.</p>
+        </li>
+        <li>
+          <p class="table-intro">Pressing the “Up” <strong class="panel">PAGE</strong> button again selects the individual Tap output volume to be edited, which reads:</p>
+          <table class="lcd" aria-label="QuadraVerb Plus display">
+            <tr><td class="lcd-line">TAP 1 VOLUME:</td></tr>
+            <tr><td class="lcd-line" style="text-align: center;"><span class="cursor">5</span>0</td></tr>
+          </table>
+          <p>Pressing the <strong class="panel">VALUE</strong> buttons selects the desired Output Volume. The range is 0 to 99.</p>
+        </li>
+        <li>
+          <p class="table-intro">Pressing the “Up” <strong class="panel">PAGE</strong> button again selects the individual Tap Panning to be edited, which reads:</p>
+          <table class="lcd" aria-label="QuadraVerb Plus display">
+            <tr><td class="lcd-line">TAP 1 PANNING:</td></tr>
+            <tr><td class="lcd-line">LEFT&lt;-<span class="cursor">0</span>0-&gt;RIGHT</td></tr>
+          </table>
+          <p>Pressing the <strong class="panel">VALUE</strong> buttons selects the desired panning from left to right. The range is Left 99 to Right 99.</p>
+        </li>
+        <li>
+          <p class="table-intro">Pressing the “Up” <strong class="panel">PAGE</strong> button again selects the individual Tap Feedback to be edited, which reads:</p>
+          <table class="lcd" aria-label="QuadraVerb Plus display">
+            <tr><td class="lcd-line">TAP 1 FEEDBACK:</td></tr>
+            <tr><td class="lcd-line" style="text-align: center;"><span class="cursor">0</span>0%</td></tr>
+          </table>
+          <p>Pressing the <strong class="panel">VALUE</strong> buttons selects the desired amount of feedback. The higher the feedback value, the more repeats occur. The range is 0 to 99.</p>
+        </li>
+        <li>
+          <p class="table-intro">Pressing the “Up” <strong class="panel">PAGE</strong> button again selects the Master Feedback to be edited, which reads:</p>
+          <table class="lcd" aria-label="QuadraVerb Plus display">
+            <tr><td class="lcd-line">MASTER FEEDBACK:</td></tr>
+            <tr><td class="lcd-line" style="text-align: center;"><span class="cursor">0</span>0%</td></tr>
+          </table>
+          <p>Pressing the <strong class="panel">VALUE</strong> buttons selects the desired amount of feedback. This is a global parameter, scaling the feedback of all taps at once. The range is 0 to 99.</p>
+        </li>
+      </ol>
+      <aside class="please-note">
+        <p>As a shortcut, while pages four through eight are active, the tap number under edit can be incremented by pushing the <strong class="panel">DELAY</strong> switch. The tap number folds back to 1 when Tap 8 is passed.</p>
+      </aside>
+    </div>
+
+    <h3 id="modulating-multi-tap">Modulating the Multi Tap Delay Parameters</h3>
+    <div class="topic-modulating topic-effect-mod">
+      <p>The Delay, Volume, Panning, and Feedback of each tap, as well as the Master Feedback, can also be modulated by any MIDI modulation source. See <a href="AlesisQuadraVerbUsersManual.html#modulating-the-parameters">Modulating the Parameters</a> in the QuadraVerb Users Manual.</p>
+    </div>
+
+    <h3 id="editing-eq-pitch-delay-multitap">Editing the EQ, Pitch, and Delay Parameters</h3>
+    <p>The parameters and mode of adjustment of the EQ, Pitch, and other Delay sections are identical to the original <a href="AlesisQuadraVerbUsersManual.html#5-band-eqpitchdelay">5 Band EQ&rarr;Pitch&rarr;Delay</a> configuration in the QuadraVerb Users Manual.</p>
+  </section>
+
+  <hr class="section-break">
+
+  <section id="sampling" class="manual-section">
+    <h2>Sampling</h2>
+    <p>The QuadraVerb Plus can make a 1.55 second sample of the input being fed to it. The maximum record time is 1.55 seconds. In playback, the sample start and length times can be altered for special effects or to trim playback to the actual start point of the sound. The sample can also be played back in its entirety (one shot) or continuously repeated (looping). Playback can be further altered by a variety of trigger sources: an incoming audio source, playback from the front panel, or a MIDI note on, note off, and note number/pitch message, which allows the sample to be played back from a MIDI keyboard.</p>
+
+    <h3 id="selecting-sampling">Selecting the Sampling Configuration</h3>
+    <p>Sampling is accessed through new Configuration 8. All Sampling parameters reside under the <strong class="panel">DELAY</strong> button while in the Sampling configuration.</p>
+    <p class="table-intro">To select this configuration, first press the <strong class="panel">CONFIG</strong> button, then press the <strong class="panel">VALUE</strong> buttons until the display reads:</p>
+    <table class="lcd" aria-label="QuadraVerb Plus display">
+      <tr><td class="lcd-line">CONFIGURATION:</td></tr>
+      <tr><td class="lcd-line"><span class="cursor">S</span>AMPLING</td></tr>
+    </table>
+
+    <figure class="config-diagram">
+      <img src="figures/fig-04-bd-sampling.svg" alt="Configuration 8, Sampling signal flow">
+      <figcaption>Figure 4 — Configuration 8, Sampling</figcaption>
+    </figure>
+
+    <h3 id="recording-a-sample">Recording a Sample</h3>
+    <p>There are two ways to record a sample. In the first (the easiest way to get a good sample), the QuadraVerb Plus waits for the incoming audio to trigger recording. The second method requires the user to initiate recording by pressing the <strong class="panel">BYPASS</strong> switch on the front panel.</p>
+
+    <h4 id="recording-by-audio-trigger">Recording by Audio Trigger</h4>
+    <ol class="steps">
+      <li>
+        <p class="table-intro">Press the <strong class="panel">DELAY</strong> button. The display will read:</p>
+        <table class="lcd" aria-label="QuadraVerb Plus display">
+          <tr><td class="lcd-line">SAMPLE PLAYBACK:</td></tr>
+          <tr><td class="lcd-line"><span class="cursor">O</span>NE SHOT</td></tr>
+        </table>
+        <p>This page is primarily for playback and can be bypassed for now.</p>
+      </li>
+      <li>
+        <p class="table-intro">Press the <strong class="panel">PAGE</strong> up button three times. The display will then read:</p>
+        <table class="lcd" aria-label="QuadraVerb Plus display">
+          <tr><td class="lcd-line">AUDIO TRIGGER</td></tr>
+          <tr><td class="lcd-line">SAMPLING: <span class="cursor">O</span>FF</td></tr>
+        </table>
+      </li>
+      <li>
+        <p class="table-intro">Press the <strong class="panel">VALUE</strong> button to select the Audio Trigger On mode. The display will read:</p>
+        <table class="lcd" aria-label="QuadraVerb Plus display">
+          <tr><td class="lcd-line">AUDIO TRIGGER</td></tr>
+          <tr><td class="lcd-line">SAMPLING: <span class="cursor">O</span>N</td></tr>
+        </table>
+      </li>
+      <li>
+        <p class="table-intro">Now press the <strong class="panel">BYPASS</strong> button. The display will read:</p>
+        <table class="lcd" aria-label="QuadraVerb Plus display">
+          <tr><td class="lcd-line" style="text-align: center;">WAITING FOR</td></tr>
+          <tr><td class="lcd-line" style="text-align: center;">AUDIO THRESHOLD</td></tr>
+        </table>
+      </li>
+      <li>
+        <p>Send a signal to the QuadraVerb Plus. When the first LED (−18&nbsp;dB) lights, the input signal has passed the audio threshold and recording has begun. For the best recorded signal, raise the input level control so that the −6&nbsp;dB LED lights. The signal will be distorted if the red Clip LED lights.</p>
+      </li>
+    </ol>
+
+    <h4 id="recording-from-the-front-panel">Recording from the Front Panel</h4>
+    <ol class="steps">
+      <li>
+        <p class="table-intro">Press the <strong class="panel">DELAY</strong> button. The display will read:</p>
+        <table class="lcd" aria-label="QuadraVerb Plus display">
+          <tr><td class="lcd-line">SAMPLE PLAYBACK:</td></tr>
+          <tr><td class="lcd-line"><span class="cursor">O</span>NE SHOT</td></tr>
+        </table>
+        <p>This page is primarily for playback and can be bypassed for now.</p>
+      </li>
+      <li>
+        <p class="table-intro">Press the <strong class="panel">PAGE</strong> up button three times. The display will then read:</p>
+        <table class="lcd" aria-label="QuadraVerb Plus display">
+          <tr><td class="lcd-line">AUDIO TRIGGER</td></tr>
+          <tr><td class="lcd-line">SAMPLING: <span class="cursor">O</span>N</td></tr>
+        </table>
+      </li>
+      <li>
+        <p class="table-intro">Press the <strong class="panel">VALUE</strong> button to select the Audio Trigger Off mode. The display will read:</p>
+        <table class="lcd" aria-label="QuadraVerb Plus display">
+          <tr><td class="lcd-line">AUDIO TRIGGER</td></tr>
+          <tr><td class="lcd-line">SAMPLING: <span class="cursor">O</span>FF</td></tr>
+        </table>
+      </li>
+      <li>
+        <p class="table-intro">When ready to sample, press the <strong class="panel">BYPASS</strong> button. The display will read:</p>
+        <table class="lcd" aria-label="QuadraVerb Plus display">
+          <tr><td class="lcd-line">SAMPLING...........</td></tr>
+          <tr><td class="lcd-line">&nbsp;</td></tr>
+        </table>
+        <p>For the best recorded signal, raise the input level control so that the −6&nbsp;dB LED lights. The signal will be distorted if the red Clip LED lights.</p>
+      </li>
+    </ol>
+
+    <h3 id="playing-back-a-sample">Playing Back a Sample</h3>
+    <p>There are three ways to play back a recorded sample: from the front panel, from an audio trigger, or through MIDI. Playback from the front panel (manual playback) is normally used when you want to trigger a recorded sample by hand. Playback from an audio trigger is normally used when replacing one audio source with a recorded sample, as when replacing a snare drum on a tape track with a better recorded sample. Playback through MIDI enables a recorded sample to be played from a MIDI keyboard.</p>
+
+    <h4 id="playback-from-the-front-panel">Playback from the Front Panel</h4>
+    <ol class="steps">
+      <li>
+        <p class="table-intro">Press the <strong class="panel">DELAY</strong> button. The display will read:</p>
+        <table class="lcd" aria-label="QuadraVerb Plus display">
+          <tr><td class="lcd-line">SAMPLE PLAYBACK:</td></tr>
+          <tr><td class="lcd-line"><span class="cursor">O</span>NE SHOT</td></tr>
+        </table>
+        <p>One Shot means that once a sample is initiated, it will play until the end of the sample and then stop.</p>
+      </li>
+      <li>To begin playback, press the <strong class="panel">EQ</strong> button. The sample will play to the end and then automatically stop. To play back again, press the <strong class="panel">EQ</strong> button again.</li>
+      <li>The volume of the sample can be increased or decreased by the <strong class="panel">OUTPUT</strong> control of the QuadraVerb Plus.</li>
+    </ol>
+
+    <h4 id="looping-playback">Continuous (Looping) Playback</h4>
+    <ol class="steps">
+      <li>
+        <p class="table-intro">If you wish to have the sample play back continuously until told to stop, press the “Down” <strong class="panel">VALUE</strong> button. The display will read:</p>
+        <table class="lcd" aria-label="QuadraVerb Plus display">
+          <tr><td class="lcd-line">SAMPLE PLAYBACK:</td></tr>
+          <tr><td class="lcd-line"><span class="cursor">L</span>OOPING</td></tr>
+        </table>
+      </li>
+      <li>
+        <p class="table-intro">To begin playback, press the <strong class="panel">EQ</strong> button. The display will then read:</p>
+        <table class="lcd" aria-label="QuadraVerb Plus display">
+          <tr><td class="lcd-line">PUSH EQ TO STOP</td></tr>
+          <tr><td class="lcd-line">SAMPLE PLAYBACK</td></tr>
+        </table>
+      </li>
+      <li>
+        <p class="table-intro">To stop playback, press the <strong class="panel">EQ</strong> button again. The display will then read:</p>
+        <table class="lcd" aria-label="QuadraVerb Plus display">
+          <tr><td class="lcd-line">PUSH EQ TO TRIG.</td></tr>
+          <tr><td class="lcd-line">SAMPLE PLAYBACK</td></tr>
+        </table>
+        <p>To play again, repeat the previous two steps.</p>
+      </li>
+    </ol>
+
+    <h4 id="playback-from-an-audio-trigger">Playback from an Audio Trigger</h4>
+    <ol class="steps">
+      <li>
+        <p class="table-intro">Press the <strong class="panel">DELAY</strong> button. The display will read:</p>
+        <table class="lcd" aria-label="QuadraVerb Plus display">
+          <tr><td class="lcd-line">SAMPLE PLAYBACK:</td></tr>
+          <tr><td class="lcd-line"><span class="cursor">O</span>NE SHOT</td></tr>
+        </table>
+      </li>
+      <li>
+        <p class="table-intro">Press the “Up” <strong class="panel">VALUE</strong> button until the display reads:</p>
+        <table class="lcd" aria-label="QuadraVerb Plus display">
+          <tr><td class="lcd-line">SAMPLE PLAYBACK:</td></tr>
+          <tr><td class="lcd-line"><span class="cursor">A</span>UDIO TRIGGER</td></tr>
+        </table>
+        <p>Any incoming audio signal that passes the threshold (makes the −18&nbsp;dB LED light) will cause the sample to play.</p>
+      </li>
+    </ol>
+    <aside class="please-note">
+      <ul>
+        <li>The recorded sample can still be manually played back by pressing the <strong class="panel">EQ</strong> button.</li>
+        <li>Looping is not available in the Audio Trigger mode.</li>
+        <li>Once a sample is audio triggered, the −18&nbsp;dB LED must turn off before the sample can be audio triggered again.</li>
+      </ul>
+    </aside>
+
+    <h4 id="playback-from-midi">Playback from MIDI</h4>
+    <p>It is also possible to MIDI-trigger the recorded sample from a MIDI keyboard. This can happen in two ways. In the first, called MIDI One Shot, when a MIDI note on is received, the recorded sample plays back to the selected end of the sample, regardless of how long the key is depressed. In the second, known as MIDI Gated, the sample stops playing when the key is released. It is also possible to select the note on the keyboard that triggers the sample at its original pitch, as well as the highest and lowest notes that the QuadraVerb Plus will respond to.</p>
+
+    <h4 id="midi-trigger-mode">To Select the MIDI Trigger Mode</h4>
+    <ol class="steps">
+      <li>
+        <p class="table-intro">Press the <strong class="panel">DELAY</strong> button. The display will read:</p>
+        <table class="lcd" aria-label="QuadraVerb Plus display">
+          <tr><td class="lcd-line">SAMPLE PLAYBACK:</td></tr>
+          <tr><td class="lcd-line"><span class="cursor">O</span>NE SHOT</td></tr>
+        </table>
+      </li>
+      <li>
+        <p class="table-intro">Press the <strong class="panel">PAGE</strong> “Up” button until the display reads:</p>
+        <table class="lcd" aria-label="QuadraVerb Plus display">
+          <tr><td class="lcd-line">MIDI TRIGGER:</td></tr>
+          <tr><td class="lcd-line"><span class="cursor">&nbsp;</span>GATED</td></tr>
+        </table>
+        <p>In the MIDI Gated mode, the sample stops playing as soon as the key is released.</p>
+      </li>
+      <li>
+        <p class="table-intro">Pressing the <strong class="panel">VALUE</strong> “Down” button once selects the next display, which reads:</p>
+        <table class="lcd" aria-label="QuadraVerb Plus display">
+          <tr><td class="lcd-line">MIDI TRIGGER:</td></tr>
+          <tr><td class="lcd-line"><span class="cursor">&nbsp;</span>OFF</td></tr>
+        </table>
+        <p>When MIDI Trigger is Off, the QuadraVerb Plus does not respond to MIDI note on/off information.</p>
+      </li>
+      <li>
+        <p class="table-intro">Pressing the <strong class="panel">VALUE</strong> “Up” button two times selects the next display, which reads:</p>
+        <table class="lcd" aria-label="QuadraVerb Plus display">
+          <tr><td class="lcd-line">MIDI TRIGGER:</td></tr>
+          <tr><td class="lcd-line"><span class="cursor">&nbsp;</span>ONE SHOT</td></tr>
+        </table>
+        <p>In the MIDI One Shot mode, the recorded sample plays back to the selected end of the sample, regardless of how long the key is depressed.</p>
+      </li>
+    </ol>
+    <aside class="please-note">
+      <p>If the playback mode is set to Looping and MIDI Trigger is set to One Shot, the sample will play indefinitely until the mode is changed or the sampling configuration is deselected.</p>
+    </aside>
+
+    <h4 id="midi-trigger-note">To Select the MIDI Trigger Note</h4>
+    <ol class="steps">
+      <li>
+        <p class="table-intro">Press the <strong class="panel">PAGE</strong> “Up” button. The next display will read:</p>
+        <table class="lcd" aria-label="QuadraVerb Plus display">
+          <tr><td class="lcd-line">MIDI TRIGGER</td></tr>
+          <tr><td class="lcd-line">LOW LIMIT: <span class="cursor">0</span>00</td></tr>
+        </table>
+      </li>
+      <li>Press the <strong class="panel">VALUE</strong> “Up” button to select the lowest desired note to trigger the recorded sample. Note number 60 = Middle C.</li>
+      <li>
+        <p class="table-intro">Press the <strong class="panel">PAGE</strong> “Up” button. The next display will read:</p>
+        <table class="lcd" aria-label="QuadraVerb Plus display">
+          <tr><td class="lcd-line">MIDI TRIGGER</td></tr>
+          <tr><td class="lcd-line">BASE: <span class="cursor">0</span>60</td></tr>
+        </table>
+        <p>The Base value is the note where the sample plays back with no pitch change.</p>
+      </li>
+      <li>Press the <strong class="panel">VALUE</strong> buttons to select the desired note. Note number 60 = Middle C.</li>
+      <li>
+        <p class="table-intro">Press the <strong class="panel">PAGE</strong> “Up” button. The next display will read:</p>
+        <table class="lcd" aria-label="QuadraVerb Plus display">
+          <tr><td class="lcd-line">MIDI TRIGGER</td></tr>
+          <tr><td class="lcd-line">HIGH LIMIT: <span class="cursor">1</span>27</td></tr>
+        </table>
+      </li>
+      <li>Press the <strong class="panel">VALUE</strong> “Down” button to select the highest desired note to trigger the recorded sample. Note number 60 = Middle C.</li>
+    </ol>
+    <aside class="please-note">
+      <ul>
+        <li>Because of the nature of sampling, the timing of the sample as well as the pitch changes substantially the farther from the base note it is triggered, with the higher notes sounding like “munchkins” and the lower notes like “giants.” This is normal during sample playback.</li>
+        <li>The pitch of the sample follows within a 2 octave range and loops back into the range if any note information falls outside of that range. For instance, if the base note has been selected as note number 60 (Middle C, or C3) and note number 84 (C5) is played, the sample pitch is triggered 1 octave higher than the base (C4).</li>
+      </ul>
+    </aside>
+
+    <h3 id="sample-playback-length">Adjusting the Sample Playback Length</h3>
+    <p>In any playback mode it is possible to adjust the sample playback length in order to ignore unwanted sampled material or “dead air,” or in order to make a loop more musical.</p>
+    <ol class="steps">
+      <li>
+        <p class="table-intro">Press the <strong class="panel">DELAY</strong> button. The display will read:</p>
+        <table class="lcd" aria-label="QuadraVerb Plus display">
+          <tr><td class="lcd-line">SAMPLE PLAYBACK:</td></tr>
+          <tr><td class="lcd-line"><span class="cursor">O</span>NE SHOT</td></tr>
+        </table>
+      </li>
+      <li>
+        <p class="table-intro">Press the <strong class="panel">PAGE</strong> “Up” button. The display will read:</p>
+        <table class="lcd" aria-label="QuadraVerb Plus display">
+          <tr><td class="lcd-line">SAMPLE START:</td></tr>
+          <tr><td class="lcd-line"><span class="cursor">0</span>.00 SECONDS</td></tr>
+        </table>
+        <p>This page determines at what point in the sample playback will start.</p>
+      </li>
+      <li>
+        <p>Press the <strong class="panel">VALUE</strong> button to select the desired start time. The start can be anywhere in the sample in 10 millisecond steps. When the start of the sample is moved, the length of a loop is maintained unless the end of the sample is reached before the loop duration. In that case, the loop duration will be from the start to the actual end of the sample, regardless of the loop duration. The duration value remains intact and takes effect again as soon as the loop start permits the proper length. The range is from 0 through 1.5 seconds in 10 millisecond increments.</p>
+      </li>
+      <li>
+        <p class="table-intro">Press the <strong class="panel">PAGE</strong> “Up” button. The display will read:</p>
+        <table class="lcd" aria-label="QuadraVerb Plus display">
+          <tr><td class="lcd-line">SAMPLE LENGTH:</td></tr>
+          <tr><td class="lcd-line"><span class="cursor">1</span>.55 SECONDS</td></tr>
+        </table>
+        <p>This page determines the length of the sample playback.</p>
+      </li>
+      <li>Press the <strong class="panel">VALUE</strong> button to select the desired sample length time.</li>
+    </ol>
+
+    <h3 id="sample-mix">Adjusting the Sample Mix Parameters</h3>
+    <p>The <strong class="panel">MIX</strong> section adjusts the relative balance between the direct signal and the recorded sample playback signal.</p>
+    <div class=" topic-editing topic-effect-mix">
+      <ol class="steps">
+        <li>
+          <p class="table-intro">Press the <strong class="panel">MIX</strong> button. The display will read:</p>
+          <table class="lcd" aria-label="QuadraVerb Plus display">
+            <tr><td class="lcd-line">DIRECT SIGNAL</td></tr>
+            <tr><td class="lcd-line">LEVEL:  +<span class="cursor">5</span>0</td></tr>
+          </table>
+          <p>This page controls the level of the direct signal.</p>
+        </li>
+        <li>Press the <strong class="panel">VALUE</strong> buttons to select the desired direct signal level. The range is 0 to 99, with 0 being off.</li>
+        <li>
+          <p class="table-intro">Press the “Up” <strong class="panel">PAGE</strong> button to select the next page. The display will read:</p>
+          <table class="lcd" aria-label="QuadraVerb Plus display">
+            <tr><td class="lcd-line">SAMPLE PLAYBACK</td></tr>
+            <tr><td class="lcd-line">SIGNAL LEVEL:+<span class="cursor">0</span>0</td></tr>
+          </table>
+          <p>This page controls the output level of the recorded sample.</p>
+        </li>
+        <li>Press the <strong class="panel">VALUE</strong> buttons to select the desired recorded sample signal level. The range is 0 to 99, with 0 being off.</li>
+      </ol>
+    </div>
+  </section>
+
+  <hr class="section-break">
+
+  <section id="panning-tremolo" class="manual-section">
+    <h2>Panning and Tremolo Modulation</h2>
+    <p>Auto Panning and Tremolo modulation of the EQ output have been added to the <code class="config">EQ&rarr;PITCH&rarr;DELAY&rarr;REVERB</code> and <code class="config">5 BAND EQ&rarr;PITCH&rarr;DELAY</code> configurations.</p>
+    <p>Auto Panning allows a signal that has first been routed through the EQ section of either of the above configurations to automatically pan from side to side at a selectable rate. The effect is heard only when both the left and right outputs of the QuadraVerb are in use.</p>
+    <p>Tremolo Modulation means that a signal that has first been routed through the EQ section of either of the above configurations varies in volume at a selected rate. Both the depth and rate of Auto Panning and Tremolo Modulation can be varied and modulated by any MIDI modulation source.</p>
+
+    <h3 id="selecting-panning-tremolo">Selecting the Panning or Tremolo Configuration</h3>
+    <p>Auto Panning or Tremolo Modulation is accessed through the <code class="config">EQ&rarr;PITCH&rarr;DELAY&rarr;REVERB</code> or <code class="config">5 BAND EQ&rarr;PITCH&rarr;DELAY</code> configurations.</p>
+    <p class="table-intro">To select either configuration, first press the <strong class="panel">CONFIG</strong> button, then press the <strong class="panel">VALUE</strong> buttons until the display reads:</p>
+    <table class="lcd" aria-label="QuadraVerb Plus display">
+      <tr><td class="lcd-line">CONFIGURATION:</td></tr>
+      <tr><td class="lcd-line"><span class="cursor">E</span>Q&gt;PCH&gt;DL&gt;REVERB</td></tr>
+    </table>
+    <p>or</p>
+    <table class="lcd" aria-label="QuadraVerb Plus display">
+      <tr><td class="lcd-line">CONFIGURATION:</td></tr>
+      <tr><td class="lcd-line"><span class="cursor">5</span>BAND EQ&gt;PCH&gt;DLY</td></tr>
+    </table>
+
+    <figure class="config-diagram">
+      <img src="figures/fig-05-bd-eq-pch-dl-rev-pan.svg" alt="EQ, Pitch, Delay, Reverb block diagram with panning and tremolo">
+      <figcaption>Figure 5 — EQ&rarr;Pitch&rarr;Delay&rarr;Reverb block diagram, with Panning and Tremolo on the EQ output</figcaption>
+    </figure>
+
+    <figure class="config-diagram">
+      <img src="figures/fig-06-bd-5band-eq-pch-dl-pan.svg" alt="5 Band EQ, Pitch, Delay block diagram with panning and tremolo">
+      <figcaption>Figure 6 — 5 Band EQ&rarr;Pitch&rarr;Delay block diagram, with Panning and Tremolo on the EQ output</figcaption>
+    </figure>
+
+    <h3 id="editing-panning-tremolo">Editing the Panning or Tremolo Parameters</h3>
+    <div class="topic-editing topic-effect-mix">
+      <ol class="steps">
+        <li>
+          <p class="table-intro">To access the Auto Panning parameters, press the <strong class="panel">MIX</strong> button. The display will then read:</p>
+          <table class="lcd" aria-label="QuadraVerb Plus display">
+            <tr><td class="lcd-line">DIRECT SIGNAL:</td></tr>
+            <tr><td class="lcd-line"><span class="cursor">P</span>RE-EQ</td></tr>
+          </table>
+        </li>
+        <li>
+          <p class="table-intro">Press the “Up” <strong class="panel">VALUE</strong> button until the next page reads:</p>
+          <table class="lcd" aria-label="QuadraVerb Plus display">
+            <tr><td class="lcd-line">DIRECT SIGNAL:</td></tr>
+            <tr><td class="lcd-line"><span class="cursor">P</span>OST-EQ PANNING</td></tr>
+          </table>
+          <p>or</p>
+          <table class="lcd" aria-label="QuadraVerb Plus display">
+            <tr><td class="lcd-line">DIRECT SIGNAL:</td></tr>
+            <tr><td class="lcd-line"><span class="cursor">P</span>OST-EQ TREMOLO</td></tr>
+          </table>
+          <p>This page allows the direct signal to be sent Pre-EQ, Post-EQ (both with no panning or tremolo), Post-EQ with Panning, or Post-EQ with Tremolo.</p>
+        </li>
+        <li>
+          <p class="table-intro">Pressing the “Up” <strong class="panel">PAGE</strong> button repeatedly selects the Panning Depth or Tremolo Depth page, which reads:</p>
+          <table class="lcd" aria-label="QuadraVerb Plus display">
+            <tr><td class="lcd-line">EQ PANNING DEPTH</td></tr>
+            <tr><td class="lcd-line" style="text-align: center;"><span class="cursor">9</span>9</td></tr>
+          </table>
+          <p>or</p>
+          <table class="lcd" aria-label="QuadraVerb Plus display">
+            <tr><td class="lcd-line">EQ TREMOLO DEPTH</td></tr>
+            <tr><td class="lcd-line" style="text-align: center;"><span class="cursor">9</span>9</td></tr>
+          </table>
+          <p>depending on whether Panning or Tremolo was selected above. Pressing the <strong class="panel">VALUE</strong> buttons selects the desired amount of Panning or Tremolo Depth. The range is 0 to 99.</p>
+        </li>
+        <li>
+          <p class="table-intro">Pressing the “Up” <strong class="panel">PAGE</strong> button again selects the Panning Speed or Tremolo Speed page, which reads:</p>
+          <table class="lcd" aria-label="QuadraVerb Plus display">
+            <tr><td class="lcd-line">EQ PANNING SPEED</td></tr>
+            <tr><td class="lcd-line" style="text-align: center;"><span class="cursor">3</span>0</td></tr>
+          </table>
+          <p>or</p>
+          <table class="lcd" aria-label="QuadraVerb Plus display">
+            <tr><td class="lcd-line">EQ TREMOLO SPEED</td></tr>
+            <tr><td class="lcd-line" style="text-align: center;"><span class="cursor">3</span>0</td></tr>
+          </table>
+          <p>depending on whether Panning or Tremolo was selected above. Pressing the <strong class="panel">VALUE</strong> buttons selects the desired Panning or Tremolo Speed. The range is 0 to 99.</p>
+        </li>
+      </ol>
+    </div>
+
+    <h3 id="modulating-panning-tremolo">Modulating the Panning or Tremolo Parameters</h3>
+    <div class=" topic-modulating topic-effect-mod">
+      <p>The Auto Panning Speed and Depth and the Tremolo Modulation Speed and Depth can also be modulated by any MIDI modulation source. See <a href="AlesisQuadraVerbUsersManual.html#modulating-the-parameters">Modulating the Parameters</a> in the QuadraVerb Users Manual.</p>
+      
+      <h3 id="editing-eq-pitch-delay-reverb-pan">Editing the EQ, Pitch, Delay, and Reverb Parameters</h3>
+      <p>The parameters and mode of adjustment of the EQ, Pitch, Delay, and Reverb sections are identical to the original <a href="AlesisQuadraVerbUsersManual.html#quadmode">EQ&rarr;Pitch&rarr;Delay&rarr;Reverb</a> configuration and the <a href="AlesisQuadraVerbUsersManual.html#5-band-eqpitchdelay">5 Band EQ&rarr;Pitch&rarr;Delay</a> configuration in the QuadraVerb Users Manual.</p>
+    </div>
+    </section>
+
+  <hr class="section-break">
+
+  <section id="ring-modulator" class="manual-section">
+    <h2>Ring Modulator</h2>
+    <p>The Ring Modulator is a specialized amplitude modulator that produces an output containing only the sum and difference frequencies of its input waveforms’ harmonics. It is most useful for generating metallic, bell-like sounds. The Ring Modulator in the QuadraVerb Plus creates two signals (Up and Down) from the initial input signal. The up output signal is a version of the input signal with its harmonic spectrum shifted up, while the down output signal is the input signal with its harmonic spectrum shifted down. The amount of shift is identical for the up and down outputs, and is specified in Hertz by the <span class="param-name">Shift Amount</span> parameter.</p>
+    <p>The following illustration shows how the output spectrums relate to the input spectrum.</p>
+
+    <figure class="figure">
+      <svg viewBox="0 0 760 420" role="img" aria-labelledby="fig1-title fig1-desc">
+        <title id="fig1-title">Ring modulator harmonic spectrum shift</title>
+        <desc id="fig1-desc">Three spectra. The input has harmonics at 500 hertz, 1 kilohertz, and 2 kilohertz. Shifting up by 200 hertz moves them to 700 hertz, 1.2 kilohertz, and 2.2 kilohertz. Shifting down by 200 hertz moves them to 300 hertz, 800 hertz, and 1.8 kilohertz.</desc>
+        <style>
+          .axis { stroke: #1a1a1a; stroke-width: 1.25; fill: none; }
+          .peak { stroke: #2B267C; stroke-width: 2.5; }
+          .t { font-family: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 12px; fill: #1a1a1a; }
+          .th { font-size: 14px; font-weight: 700; }
+          .hz { font-size: 11px; fill: #2B267C; }
+          .tick { font-size: 10px; fill: #5a5a5a; }
+        </style>
+        <!-- log-ish positions: 100, 300, 500, 700, 800, 1000, 1200, 1800, 2000, 2200, 5000, 10000 -->
+        <text class="t th" x="16" y="22">A — Input signal</text>
+        <text class="t" x="28" y="70">Amp</text>
+        <line class="axis" x1="70" y1="100" x2="730" y2="100"/>
+        <line class="axis" x1="70" y1="40" x2="70" y2="100"/>
+        <line class="peak" x1="210" y1="100" x2="210" y2="48"/>
+        <line class="peak" x1="310" y1="100" x2="310" y2="58"/>
+        <line class="peak" x1="430" y1="100" x2="430" y2="68"/>
+        <text class="hz" x="210" y="42" text-anchor="middle">500 Hz</text>
+        <text class="hz" x="310" y="52" text-anchor="middle">1 kHz</text>
+        <text class="hz" x="430" y="62" text-anchor="middle">2 kHz</text>
+        <text class="tick" x="120" y="116" text-anchor="middle">100 Hz</text>
+        <text class="tick" x="560" y="116" text-anchor="middle">5 kHz</text>
+        <text class="tick" x="700" y="116" text-anchor="middle">10 kHz</text>
+        <text class="tick" x="730" y="92">Freq.</text>
+
+        <text class="t th" x="16" y="160">B — Up output, pitch shift = +200 Hz</text>
+        <text class="t" x="28" y="200">Amp</text>
+        <line class="axis" x1="70" y1="230" x2="730" y2="230"/>
+        <line class="axis" x1="70" y1="170" x2="70" y2="230"/>
+        <line class="peak" x1="250" y1="230" x2="250" y2="178"/>
+        <line class="peak" x1="350" y1="230" x2="350" y2="188"/>
+        <line class="peak" x1="470" y1="230" x2="470" y2="198"/>
+        <text class="hz" x="250" y="172" text-anchor="middle">700 Hz</text>
+        <text class="hz" x="350" y="182" text-anchor="middle">1.2 kHz</text>
+        <text class="hz" x="470" y="192" text-anchor="middle">2.2 kHz</text>
+
+        <text class="t th" x="16" y="280">C — Down output, pitch shift = −200 Hz</text>
+        <text class="t" x="28" y="320">Amp</text>
+        <line class="axis" x1="70" y1="360" x2="730" y2="360"/>
+        <line class="axis" x1="70" y1="300" x2="70" y2="360"/>
+        <line class="peak" x1="170" y1="360" x2="170" y2="308"/>
+        <line class="peak" x1="280" y1="360" x2="280" y2="318"/>
+        <line class="peak" x1="410" y1="360" x2="410" y2="328"/>
+        <text class="hz" x="170" y="302" text-anchor="middle">300 Hz</text>
+        <text class="hz" x="280" y="312" text-anchor="middle">800 Hz</text>
+        <text class="hz" x="410" y="322" text-anchor="middle">1.8 kHz</text>
+        <text class="tick" x="120" y="376" text-anchor="middle">100 Hz</text>
+        <text class="tick" x="210" y="390" text-anchor="middle">500 Hz</text>
+        <text class="tick" x="310" y="376" text-anchor="middle">1 kHz</text>
+        <text class="tick" x="560" y="376" text-anchor="middle">5 kHz</text>
+        <text class="tick" x="700" y="376" text-anchor="middle">10 kHz</text>
+        <text class="tick" x="730" y="352">Freq.</text>
+      </svg>
+      <figcaption>Figure 1 — Ring modulator harmonic spectrum shift with a SPECTRUM SHIFT of 200Hz</figcaption>
+    </figure>
+
+    <p>In Figure 1A, the fundamental (the frequency perceived as the instrument’s pitch) is 500&nbsp;Hz. The harmonics are normally even multiples of the fundamental: 2 times, 3 times, 4 times, and so on. In this case, the 2nd harmonic is 1&nbsp;kHz (1000 cycles per second), twice the fundamental of 500&nbsp;Hz, and the 4th harmonic is 2&nbsp;kHz, or 4 times the fundamental.</p>
+    <p>In Figure 1B, the Pitch Shift amount has been set to 200&nbsp;Hz, which means that the fundamental and all of its related harmonics are shifted up by the same 200&nbsp;Hz. The fundamental has been shifted to 700&nbsp;Hz, the 2nd harmonic is now at 1.2&nbsp;kHz (normally it would be 2 times the fundamental, or 1.4&nbsp;kHz), and the 4th harmonic is 2.2&nbsp;kHz (normally it would be 2.8&nbsp;kHz).</p>
+    <p>In Figure 1C, the Pitch Shift amount is shifted down by 200&nbsp;Hz, which means that the fundamental and all of its related harmonics are shifted down by the same 200&nbsp;Hz. The fundamental has been shifted to 300&nbsp;Hz, the 2nd harmonic is now at 800&nbsp;Hz (normally it would be 2 times the fundamental, or 600&nbsp;Hz), and the 4th harmonic is 1.8&nbsp;kHz (normally it would be 1.2&nbsp;kHz).</p>
+    <p>Since the ratio between the input signal’s harmonics is not preserved, the resulting sound is drastically different from the original. Usual ring modulators provide only a fixed mix of the Up and Down spectrums. The algorithm in the QuadraVerb Plus gives independent access to the Up and Down versions of the original spectrum. The ring modulator treatment is most valuable as a special effect on voices or sound effects.</p>
+
+    <h3 id="selecting-ring-modulator">Selecting the Ring Modulator</h3>
+    <p>The Ring Modulator is accessed through new Configuration 6, <code class="config">RING MODULATOR&rarr;DELAY&rarr;REVERB</code>.</p>
+    <p class="table-intro">To select this configuration, first press the <strong class="panel">CONFIG</strong> button, then press the <strong class="panel">VALUE</strong> buttons until the display reads:</p>
+    <table class="lcd" aria-label="QuadraVerb Plus display">
+      <tr><td class="lcd-line">CONFIGURATION:</td></tr>
+      <tr><td class="lcd-line"><span class="cursor">R</span>ING-&gt;DL-&gt;REVERB</td></tr>
+    </table>
+
+    <figure class="config-diagram">
+      <img src="figures/fig-02-bd-ring-mod.svg" alt="Configuration 6, Ring Modulator, Delay, Reverb signal flow">
+      <figcaption>Figure 2 — Configuration 6, Ring Modulator&rarr;Delay&rarr;Reverb</figcaption>
+    </figure>
+
+    <table class="data">
+      <caption>Delay and reverb types in Configuration 6</caption>
+      <thead>
+        <tr><th>Delay types</th><th>Reverb types</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Mono Delay — 800&nbsp;ms</td><td>Plate 1</td></tr>
+        <tr><td>Stereo Delay — 400&nbsp;ms per side</td><td>Room 1</td></tr>
+        <tr><td>Ping-Pong Delay — 400&nbsp;ms</td><td>Chamber 1</td></tr>
+        <tr><td></td><td>Hall 1</td></tr>
+        <tr><td></td><td>Reverse 1</td></tr>
+      </tbody>
+    </table>
+
+    <h3 id="editing-ring-modulator">Editing the Ring Modulator Parameters</h3>
+    <div class="topic-editing topic-effect-pitch">
+      <ol class="steps">
+        <li>
+          <p class="table-intro">To access the Ring Modulator parameters, press the <strong class="panel">PITCH</strong> button. The display will then read:</p>
+          <table class="lcd" aria-label="QuadraVerb Plus display">
+            <tr><td class="lcd-line">SPECTRUM SHIFT:</td></tr>
+            <tr><td class="lcd-line" style="text-align: center;"> <span class="cursor">1</span>100Hz</td></tr>
+          </table>
+          <p>Pressing the <strong class="panel">VALUE</strong> buttons selects the desired Spectrum Shift. The range is 1&nbsp;Hertz to 300&nbsp;Hertz in 1&nbsp;Hertz increments.</p>
+        </li>
+        <li>
+          <p class="table-intro">Pressing the “Up” <strong class="panel">PAGE</strong> button selects the next page, which reads:</p>
+          <table class="lcd" aria-label="QuadraVerb Plus display">
+            <tr><td class="lcd-line">RING MOD OUTPUT</td></tr>
+            <tr><td class="lcd-line">MIX: DOWN&lt;-<span class="cursor">0</span>0-&gt;UP</td></tr>
+          </table>
+          <p>Pressing the <strong class="panel">VALUE</strong> buttons selects the desired mix of Up to Down Ring Modulator outputs.</p>
+        </li>
+        <li>
+          <p class="table-intro">Pressing the “Up” <strong class="panel">PAGE</strong> button again selects the third page, which reads:</p>
+          <table class="lcd" aria-label="QuadraVerb Plus display">
+            <tr><td class="lcd-line">DEL/REVERB INPUT</td></tr>
+            <tr><td class="lcd-line">MIX: DOWN&lt;-<span class="cursor">0</span>0-&gt;UP</td></tr>
+          </table>
+          <p>Pressing the <strong class="panel">VALUE</strong> buttons selects the desired ratio of Up to Down Spectrum Shift, which can then be used as input for the Delay or Reverb. This differs from the second page in that it is possible to send a different mix of Ring Modulator outputs to the Delay and Reverb than the mix that appears in the <strong class="panel">MIX</strong> section of the QuadraVerb Plus.</p>
+        </li>
+      </ol>
+    </div>
+
+    <h3 id="modulating-ring-modulator">Modulating the Ring Modulator Parameters</h3>
+    <div class="topic-modulating topic-effect-mod">
+      <p>The Spectrum Shift, Ring Modulator Output up/down mix, and Delay/Reverb up/down mix can also be modulated by any MIDI modulation source. See <a href="AlesisQuadraVerbUsersManual.html#modulating-the-parameters">Modulating the Parameters</a> in the QuadraVerb Users Manual.</p>
+    </div>
+
+    <h3 id="editing-delay-reverb-ring">Editing the Delay and Reverb Parameters</h3>
+    <p>The parameters and mode of adjustment of the Delay and Reverb sections are identical to the original <a href="AlesisQuadraVerbUsersManual.html#lesliedelayreverb">Leslie&rarr;Delay&rarr;Reverb</a> configuration in the QuadraVerb Users Manual.</p>
+  </section>
+
+  <hr class="section-break">
+
+  <section id="resonators" class="manual-section">
+    <h2>Resonators</h2>
+    <p>Instead of just processing a signal such as Delay or Reverb, a resonator generates a pitch in addition to the original input signal. There are 5 resonators in the QuadraVerb Plus. The initial resonating frequency of each resonator can be individually adjusted (tuned) on a chromatic scale. The resonator frequencies also chromatically follow incoming MIDI notes. The decay time of the five resonators can also be adjusted simultaneously.</p>
+
+    <h3 id="selecting-resonator">Selecting the Resonator Configuration</h3>
+    <p>The Resonators are accessed through new Configuration 7, <code class="config">RESONATOR&rarr;DELAY&rarr;REVERB</code>.</p>
+    <p class="table-intro">To select this configuration, first press the <strong class="panel">CONFIG</strong> button, then press the <strong class="panel">VALUE</strong> buttons until the display reads:</p>
+    <table class="lcd" aria-label="QuadraVerb Plus display">
+      <tr><td class="lcd-line">CONFIGURATION:</td></tr>
+      <tr><td class="lcd-line"><span class="cursor">R</span>ESONATOR&gt;DL&gt;REV</td></tr>
+    </table>
+
+    <figure class="config-diagram">
+      <img src="figures/fig-03-bd-resonators.svg" alt="Configuration 7, Resonators, Delay, Reverb signal flow">
+      <figcaption>Figure 3 — Configuration 7, Resonators&rarr;Delay&rarr;Reverb</figcaption>
+    </figure>
+
+    <table class="data">
+      <caption>Delay and reverb types in Configuration 7</caption>
+      <thead>
+        <tr><th>Delay types</th><th>Reverb types</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Mono Delay — 720&nbsp;ms</td><td>Plate 1</td></tr>
+        <tr><td>Stereo Delay — 320&nbsp;ms per side</td><td>Room 1</td></tr>
+        <tr><td>Ping-Pong Delay — 320&nbsp;ms</td><td>Chamber 1</td></tr>
+        <tr><td></td><td>Hall 1</td></tr>
+        <tr><td></td><td>Reverse 1</td></tr>
+      </tbody>
+    </table>
+
+    <h3 id="editing-resonator">Editing the Resonator Parameters</h3>
+    <div class="topic-editing topic-effect-pitch">
+      <ol class="steps">
+        <li>
+          <p class="table-intro">To access the Resonator parameters, press the <strong class="panel">PITCH</strong> button. The display will then read:</p>
+          <table class="lcd" aria-label="QuadraVerb Plus display">
+            <tr><td class="lcd-line">RESONATOR GATE</td></tr>
+            <tr><td class="lcd-line">MODE: <span class="cursor">C</span>ONTINOUS</td></tr>
+          </table>
+          <p>This page determines if the resonators are gated by an incoming MIDI note on/off. If the MIDI gate is on, the input of each resonator is connected to the input signal only while its corresponding MIDI gate is on. Consequently, when a note is released, the output of the resonator driven by this note decays to zero even if the input signal is active. Pressing the <strong class="panel">VALUE</strong> buttons selects the MIDI Gated mode:</p>
+          <table class="lcd" aria-label="QuadraVerb Plus display">
+            <tr><td class="lcd-line">RESONATOR GATE</td></tr>
+            <tr><td class="lcd-line">MODE: <span class="cursor">M</span>IDI GATED</td></tr>
+          </table>
+        </li>
+      </ol>
+      <aside class="please-note">
+        <p>When playing the resonators from MIDI, the five pitches are determined by up to five notes played on the MIDI keyboard. When used this way, the resonator tunings should be set to zero for proper keyboard tuning.</p>
+      </aside>
+      <ol class="steps" start="2">
+        <li>
+          <p class="table-intro">Pressing the “Up” <strong class="panel">PAGE</strong> button selects the next page, which reads:</p>
+          <table class="lcd" aria-label="QuadraVerb Plus display">
+            <tr><td class="lcd-line">RESONATOR DECAY:</td></tr>
+            <tr><td class="lcd-line" style="text-align: center;"><span class="cursor">4</span>9</td></tr>
+          </table>
+          <p>This page simultaneously adjusts the decay time of the five resonators. The range is from 0 through 99, with 99 being maximum decay time. Pressing the <strong class="panel">VALUE</strong> buttons selects the desired decay time.</p>
+        </li>
+        <li>
+          <p class="table-intro">The next five pages adjust the initial pitch of resonators 1 through 5. Pressing the “Up” <strong class="panel">PAGE</strong> button continually selects each Resonator page, which reads:</p>
+          <table class="lcd" aria-label="QuadraVerb Plus display">
+            <tr><td class="lcd-line">RESONATOR 1 TUNE</td></tr>
+            <tr><td class="lcd-line">+<span class="cursor">0</span>0 SEMITONE</td></tr>
+          </table>
+          <table class="lcd" aria-label="QuadraVerb Plus display">
+            <tr><td class="lcd-line">RESONATOR 2 TUNE</td></tr>
+            <tr><td class="lcd-line">+<span class="cursor">0</span>0 SEMITONE</td></tr>
+          </table>
+          <p>…and so on, up to Resonator 5. Pressing the <strong class="panel">VALUE</strong> buttons selects the desired tuning of the resonator. The range is −24 to +36 semitones, and covers 5 octaves from C1 through C6 (0 = C3).</p>
+        </li>
+      </ol>
+    </div>
+
+    <h3 id="modulating-resonator">Modulating the Resonator Parameters</h3>
+    <div class="topic-modulating topic-effect-mod">
+      <p>The Resonator Decay can also be modulated by any MIDI modulation source. See <a href="AlesisQuadraVerbUsersManual.html#modulating-the-parameters">Modulating the Parameters</a> in the QuadraVerb Users Manual.</p>
+    </div>
+
+    <h3 id="editing-delay-reverb-resonator">Editing the Delay and Reverb Parameters</h3>
+    <p>The parameters and mode of adjustment of the Delay and Reverb sections are identical to the original <a href="AlesisQuadraVerbUsersManual.html#lesliedelayreverb">Leslie&rarr;Delay&rarr;Reverb</a> configuration in the QuadraVerb Users Manual.</p>
+  </section>
+</article>
+</body>
+</html>
